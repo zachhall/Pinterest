@@ -4,16 +4,13 @@ class BoardsController < ApplicationController
   # GET /boards
   # GET /boards.json
   def index
-    @users = User.all
     @boards = Board.all
   end
 
   # GET /boards/1
   # GET /boards/1.json
   def show
-    @users = User.all
-    @boards = Board.all
-    @pins = Pin.all
+
   end
 
   # GET /boards/new

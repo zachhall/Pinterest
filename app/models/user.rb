@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
 
 	validates :first_name,
 		presence: true,
-		length {minimum: 2, maximum: 20}
+		length: {minimum: 2, maximum: 20}
 end
