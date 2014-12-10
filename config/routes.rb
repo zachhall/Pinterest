@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'home' => 'users#index'
+
+  delete '/pins' => 'pins#delete_all'
+
   resources :pins
 
   resources :boards

@@ -12,12 +12,12 @@
 
 <p>
   <strong>Board:</strong>
-  <%= @pin.board_id %>
+  <%= @pin.board.name %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @pin.user_id %>
+  <%= @pin.user.first_name%>
 </p>
 
 <%= link_to 'Edit', edit_pin_path(@pin) %> |
