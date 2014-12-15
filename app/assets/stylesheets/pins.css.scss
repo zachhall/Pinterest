@@ -8,6 +8,7 @@
 	display: inline-block;
 	width: 100%;
 	-webkit-backface-visibility: hidden;
+	border-radius: 10px;
 }
 
 .item-background:not(:hover){
@@ -17,11 +18,13 @@
 .pin-image {
 	width: 100%;
 	height: auto;
-	border-bottom: 1px solid #ccc;
+	
+/*	border-bottom: 1px solid #ccc;
 	padding-bottom: 15px;
 	margin-bottom: 5px;
+*/	
 	text-align: center;
-
+	border-radius: 10px;
 }
 
 #columns {
@@ -40,4 +43,8 @@
 	width: 90%;
 	max-width: 1100px;
 	margin: 50px auto;
+}
+
+.item-info {
+	display: inline;
 }
