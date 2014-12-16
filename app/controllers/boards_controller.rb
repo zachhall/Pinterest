@@ -34,9 +34,9 @@ class BoardsController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @board.errors, status: :unprocessable_entity }
+        redirect_to "/pins/new"
       end
     end
-    redirect_to "/pins/new"
   end
 
   # PATCH/PUT /boards/1

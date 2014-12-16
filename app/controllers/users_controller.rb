@@ -58,9 +58,9 @@ class UsersController < ApplicationController
       else
         format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
+        redirect_to "/boards/new"
       end
     end
-    redirect_to "/boards/new"
   end
 
   # DELETE /users/1
